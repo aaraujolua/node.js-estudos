@@ -1,4 +1,4 @@
-const readLine = require('readline') .createInterface ({
+const readLine = require('readline').createInterface ({
     input : process.stdin,
     output : process.stdout
 });
@@ -13,7 +13,7 @@ readLine.question('Qual é o ano do seu nascimento?', ano => {
         readLine.question('Voce possui habilitacao? (Sim/Nao)', temHabilitacao => {
             if(!(temHabilitacao.toUpperCase() === 'SIM')){
                 console.log('Voce nao possui habilitacao para dirigir o kart')
-            }else{
+            } else {
                 readLine.question('Qual e o seu nome?', nome => {
                     switch(nome) {
                         case 'Luana' :
